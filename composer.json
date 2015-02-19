@@ -1,0 +1,26 @@
+{
+    "name": "clover/worker",
+    "type": "library",
+    "description": "Class for worker implementation",
+    "homepage": "https://github.com/hiroy/clover-worker",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Hiroyuki Yamaoka",
+            "email": "yamaoka@10mado.jp"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-pcntl": "*",
+        "travail/parallel-prefork": "0.1.*"
+    },
+    "autoload": {
+        "psr-0": { "Clover": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
