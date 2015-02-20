@@ -13,9 +13,9 @@ abstract class Worker
         ],
     ];
 
-    public abstract function main();
+    public abstract function main(array $args = []);
 
-    public function start(array $ppOptions = [])
+    public function start(array $args = [], array $ppOptions = [])
     {
         $options = array_merge($this->defaultOptions, $ppOptions);
         $pp = new Prefork($options);
@@ -26,7 +26,7 @@ abstract class Worker
             }
 
             $w = new static();
-            $w->main();
+            $w->main($args);
 
             $pp->finish();
         }
