@@ -25,7 +25,8 @@ abstract class Worker
                 continue;
             }
 
-            $this->main();
+            $w = new static();
+            $w->main();
 
             $pp->finish();
         }
