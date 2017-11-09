@@ -13,7 +13,7 @@
     "require": {
         "php": ">=5.4",
         "ext-pcntl": "*",
-        "travail/parallel-prefork": "0.1.*"
+        "travail/parallel-prefork": "^0.2.1"
     },
     "autoload": {
         "psr-0": { "Clover": "src/" }
